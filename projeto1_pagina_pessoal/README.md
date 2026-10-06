@@ -82,20 +82,6 @@ Folha de estilos da página principal, com paleta em tons de roxo, fonte monoesp
 | *Valentine* — Laufey | Áudio na seção Mídia | Áudio oficial da artista **Laufey** (YouTube). Direitos pertencem à artista; usado apenas para fins educacionais |
 | Trailer de *Hades* | Vídeo na seção Mídia | [YouTube](https://www.youtube.com/watch?v=91t0ha9x0AE) — conteúdo da **Supergiant Games**; incorporado via `iframe` |
 
-## ✅ Testes Realizados
-
-- [ ] Links de seção do menu (Sobre mim, Interesses, Estudos, Mídia, Contato)
-- [ ] Link de ida para `paginas.html` e link de volta para `index.html`
-- [ ] Link externo para o GitHub
-- [ ] Carregamento das imagens
-- [ ] Reprodução e pausa do áudio
-- [ ] Reprodução do vídeo incorporado
-- [ ] Formulário: campos, rótulos e validação de e-mail
-- [ ] Navegação por teclado (Tab)
-- [ ] Abertura de uma cópia da pasta em outro local para conferir caminhos relativos
-
-*(Marque cada item após testar.)*
-
 ## 🤖 Uso de IA
 
 A IA foi utilizada como apoio na revisão do código e na elaboração deste README. Os textos, as escolhas de conteúdo e o código da página foram produzidos e revisados por mim, e sou capaz de explicar cada parte do projeto.

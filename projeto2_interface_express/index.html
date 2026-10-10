@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra GameJam | Feira de Desenvolvimento de Jogos</title>
+    <meta name="description" content="Conheça a Astra GameJam, um evento de desenvolvimento de jogos com tema espacial, equipes criativas e apresentação de projetos.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- ================================================== -->
+    <!-- CABEÇALHO: nome do evento, logo e menu de navegação -->
+    <!-- ================================================== -->
+    <header id="topo">
+
+        <!-- Logo do evento -->
+        <!-- Opção 1: imagem local dentro da pasta imagens -->
+        <!-- Salve o arquivo com o nome img_logo_evento.png -->
+        <a href="#apresentacao" aria-label="Voltar ao início da Astra GameJam">
+            <img
+                src="imagens/img_logo_evento.png"
+                alt="Logo da Astra GameJam"
+                class="logo-evento"
+            >
+        </a>
+
+        <!-- Nome e frase de apresentação do evento -->
+        <div class="identidade-evento">
+            <h1>Astra GameJam</h1>
+            <p>Imagine o universo. Desenvolva o seu jogo. Apresente sua criação!</p>
+        </div>
+
+        <!-- 
+            Opção 2 para o logo:
+            Caso prefira utilizar uma imagem externa, substitua o src da imagem
+            acima por uma URL válida, como no exemplo abaixo.
+
+            <img
+                src="https://exemplo.com/img_logo_evento.png"
+                alt="Logo da Astra GameJam"
+                class="logo-evento"
+            >
+        -->
+
+        <!-- Menu com links para as três seções da página -->
+        <nav aria-label="Menu principal">
+            <ul>
+                <!-- Leva à primeira seção -->
+                <li>
+                    <a href="#apresentacao">O evento</a>
+                </li>
+
+                <!-- Leva à segunda seção -->
+                <li>
+                    <a href="#destaques">Informações</a>
+                </li>
+
+                <!-- Leva à terceira seção -->
+                <li>
+                    <a href="#inscricao">Inscreva seu grupo</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ================================================ -->
+    <!-- CONTEÚDO PRINCIPAL DA LANDING PAGE -->
+    <!-- ================================================ -->
+    <main>
+
+        <!-- ================================================ -->
+        <!-- SECTION 1: APRESENTAÇÃO DO EVENTO -->
+        <!-- ================================================ -->
+        <section id="apresentacao" class="secao-apresentacao">
+
+            <!-- Título principal e convite para participar -->
+            <h2>Uma aventura pelo universo dos jogos!</h2>
+
+            <p>
+                A Astra GameJam é um evento dedicado à criatividade, à programação
+                e ao desenvolvimento de jogos digitais. Durante o desafio,
+                equipes de desenvolvedores terão a missão de criar um jogo
+                inspirado no tema <strong>Espaço</strong>, em um período limitado.
+            </p>
+
+            <p>
+                A programação começa no dia 07/10. No dia 10/10, os participantes
+                apresentarão seus projetos em uma feira de jogos, onde cada
+                equipe terá seu próprio stand para demonstrar suas criações
+                ao público.
+            </p>
+
+            <p>
+                Prepare suas ideias, reúna sua equipe e embarque nessa jornada
+                intergaláctica!
+            </p>
+
+            <!-- Botão de chamada para ação: direciona ao formulário -->
+            <a href="#inscricao" class="botao-inscricao">
+                Quero participar
+            </a>
+
+            <!--
+                Sugestão opcional de imagem para a apresentação:
+                Imagem local: imagens/img_banner_espaco.jpg
+
+                Para utilizar uma imagem externa, substitua o caminho do arquivo
+                por uma URL válida.
+
+                Exemplo:
+                <img
+                    src="https://exemplo.com/img_banner_espaco.jpg"
+                    alt="Ilustração de uma galáxia para a Astra GameJam"
+                    class="imagem-banner"
+                >
+            -->
+
+        </section>
+
+
+        <!-- ================================================ -->
+        <!-- SECTION 2: DESTAQUES E INFORMAÇÕES DO EVENTO -->
+        <!-- Os três cards apresentam os principais detalhes -->
+        <!-- ================================================ -->
+        <section id="destaques" class="secao-destaques">
+
+            <h2>Conheça o desafio</h2>
+
+            <p>
+                Confira as principais informações para preparar sua equipe
+                para a Astra GameJam.
+            </p>
+
+            <!-- Contêiner dos três cards informativos -->
+            <div class="container-cards">
+
+                <!-- CARD 1: tema e desafio -->
+                <article class="card-informativo">
+
+                    <!-- 
+                        Imagem local sugerida:
+                        imagens/img_tema_espaco.jpg
+
+                        Alternativa externa:
+                        substitua o src por uma URL de imagem válida.
+                    -->
+                    <img
+                        src="imagens/img_tema_espaco.jpg"
+                        alt="Representação de planetas e estrelas no espaço"
+                        class="imagem-card"
+                    >
+
+                    <h3>Missão: Espaço</h3>
+
+                    <p>
+                        O universo será a inspiração para os jogos.
+                        Explore planetas, viagens espaciais, civilizações
+                        extraterrestres ou crie sua própria aventura cósmica.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 2: equipe e cronograma -->
+                <article class="card-informativo">
+
+                    <!--
+                        Imagem local sugerida:
+                        imagens/img_equipe_gamejam.jpg
+
+                        Para usar uma imagem externa, substitua o caminho
+                        acima por uma URL válida.
+                    -->
+                    <img
+                        src="https://static.vecteezy.com/ti/vetor-gratis/p1/26357151-equipe-escreve-programacao-de-codigo-para-aplicativo-ou-site-vetor.jpg"
+                        alt="Equipe de desenvolvedores trabalhando em um jogo"
+                        class="imagem-card"
+                    >
+
+                    <h3>Monte sua equipe</h3>
+
+                    <p>
+                        Cada grupo deverá ter exatamente 3 integrantes.
+                        O desenvolvimento começa em 07/10 e os jogos
+                        serão apresentados ao público no dia 10/10.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 3: feira e premiação -->
+                <article class="card-informativo">
+
+                    <!--
+                        Imagem local sugerida:
+                        imagens/img_premiacao_gamejam.jpg
+
+                        Alternativa externa:
+                        substitua o src por uma URL de imagem válida.
+                    -->
+                    <img
+                        src="imagens/img_premiacao_gamejam.jpg"
+                        alt="Troféu representando a premiação do evento"
+                        class="imagem-card"
+                    >
+
+                    <h3>Apresente e concorra</h3>
+
+                    <p>
+                        No dia 10/10, cada equipe terá seu próprio stand
+                        para apresentar o jogo desenvolvido. A premiação
+                        anunciada para o evento é de R$ 1000,00.
+                    </p>
+
+                </article>
+
+            </div>
+            <!-- Fim do contêiner dos cards -->
+
+        </section>
+
+
+        <!-- ================================================ -->
+        <!-- SECTION 3: FORMULÁRIO DEMONSTRATIVO DE INSCRIÇÃO -->
+        <!-- ================================================ -->
+        <section id="inscricao" class="secao-inscricao">
+
+            <h2>Inscreva seu grupo</h2>
+
+            <p>
+                Sua equipe está pronta para o desafio? Preencha os campos
+                abaixo com as informações do grupo e do jogo que pretendem
+                apresentar na Astra GameJam.
+            </p>
+
+            <!--
+                Formulário demonstrativo.
+                O atributo action="#" não envia os dados para um sistema real.
+                Para receber inscrições de verdade, será necessário integrar
+                o formulário a um serviço ou a um back-end.
+            -->
+            <form action="#" method="post" class="formulario-inscricao">
+
+                <!-- Campo para o e-mail de contato da equipe -->
+                <div class="grupo-campo">
+                    <label for="email-grupo">E-mail para contato:</label>
+
+                    <input
+                        type="email"
+                        id="email-grupo"
+                        name="email_grupo"
+                        placeholder="exemplo@email.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- Campo para o nome da equipe -->
+                <div class="grupo-campo">
+                    <label for="nome-grupo">Nome do grupo:</label>
+
+                    <input
+                        type="text"
+                        id="nome-grupo"
+                        name="nome_grupo"
+                        placeholder="Ex.: Exploradores Cósmicos"
+                        maxlength="80"
+                        required
+                    >
+                </div>
+
+                <!-- Campo para o nome do jogo que será apresentado -->
+                <div class="grupo-campo">
+                    <label for="nome-jogo">Nome do jogo:</label>
+
+                    <input
+                        type="text"
+                        id="nome-jogo"
+                        name="nome_jogo"
+                        placeholder="Ex.: A Última Fronteira"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <!-- Botão demonstrativo de envio do formulário -->
+                <button type="submit" class="botao-enviar">
+                    Enviar inscrição
+                </button>
+
+                <!-- Aviso de que o formulário é apenas uma demonstração -->
+                <p class="aviso-formulario">
+                    Este formulário é demonstrativo e não registra inscrições
+                    em um sistema real.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================================ -->
+    <!-- RODAPÉ: informações finais do projeto acadêmico -->
+    <!-- ================================================ -->
+    <footer>
+
+        <!-- Nome do evento e direitos de uso do conteúdo -->
+        <p>
+            &copy; 2026 Astra GameJam. Projeto acadêmico.
+        </p>
+
+        <!--
+            Substitua os campos abaixo pelas informações de apresentação
+            do grupo e da turma.
+            Não inclua RGM, endereço ou outros dados pessoais sensíveis.
+        -->
+        <p>
+            Desenvolvido por: Isaque Moreira 
+        </p>
+
+        <!-- Link para retornar ao início da página -->
+        <a href="#topo">Voltar ao topo</a>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+/*1. ESTILOS GLOBAIS E RESET DE CAIXA (BOX MODEL)*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho total */
+}
+
+/* Suaviza o comportamento de rolagem ao clicar nos links internos do menu */
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Audiowide', sans-serif, Arial, sans-serif;
+background-color: #0f051d; /* Roxo espacial profundo (Fundo principal) /
+color: #ffffff;            / Texto em Branco */
+line-height: 1.6;
+}
+
+/* 2. CABEÇALHO E NAVEGAÇÃO / Seletor de ID (#topo) combinado com Flexbox para o cabeçalho */
+#topo {
+background: linear-gradient(135deg, #24103f, #4a154b); /* Propriedade nova: gradiente */
+padding: 50px 70px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+border-bottom: 3px solid #facc15; /* Amarelo de destaque */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Propriedade nova: sombra na caixa */
+}
+
+/* Classe para estilizar o logotipo circular do evento */
+.logo-evento {
+width: 100px;
+height: 100px;
+object-fit: cover; /* Propriedade nova: ajuste da imagem */
+border-radius: 50%;
+border: 2px solid #facc15;
+transition: transform 0.3s ease; /* Propriedade nova: transição suave */
+}
+
+.logo-evento:hover {
+transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.identidade-evento h1 {
+font-size: 2rem;
+color: #facc15; /* Amarelo */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.identidade-evento p {
+font-size: 1.4rem;
+color: #e2e8f0; /* Branco suave */
+}
+
+/* Seletor hierárquico / descendente obrigatório */
+header nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+header nav ul li a {
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 14px;
+border-radius: 4px;
+transition: background-color 0.3s ease, color 0.3s ease;
+font-size: 1.2rem;
+}
+
+/* Estados interativos obrigatórios: :hover e :focus */
+header nav ul li a:hover {
+background-color: #facc15; /* Fundo amarelo no hover */
+color: #0f051d;            /* Texto roxo escuro no hover */
+}
+
+header nav ul li a:focus {
+outline: 2px dashed #facc15; /* Propriedade nova: contorno focado */
+outline-offset: 4px;
+}
+
+/*3. CONTEÚDO PRINCIPAL E SEÇÕES*/
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+/* Estilização padrão para todas as seções principais */
+section {
+margin-bottom: 50px;
+padding: 40px;
+background-color: #180a2a; /* Roxo intermediário para destacar blocos */
+border-radius: 12px;
+border: 1px solid #4a154b;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+color: #facc15;
+font-size: 2rem;
+margin-bottom: 20px;
+text-align: center;
+}
+
+section p {
+margin-bottom: 15px;
+color: #d1d5db;
+text-align: center;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+font-size: 1.5rem;
+}
+
+/* Seção de Apresentação */
+.secao-apresentacao {
+text-align: center;
+}
+
+/* Botões de chamada para ação (CTA) */
+.botao-inscricao, .botao-enviar {
+display: inline-block;
+background-color: #facc15;
+color: #0f051d;
+padding: 12px 30px;
+font-weight: bold;
+text-decoration: none;
+border-radius: 30px;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+margin-top: 20px;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-inscricao:hover, .botao-enviar:hover {
+background-color: #fde047;
+transform: scale(1.05); /* Propriedade nova: efeito de ampliação */
+}
+
+.botao-inscricao:focus, .botao-enviar:focus {
+outline: 3px solid #ffffff;
+}
+
+/*4. SEÇÃO DESTAQUES (CARDS) COM FLEXBOX*/
+.secao-destaques .container-cards {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+margin-top: 30px;
+}
+
+.card-informativo {
+background-color: #24103f;
+border: 1px solid #7c3aed; /* Roxo claro brilhante */
+border-radius: 10px;
+padding: 20px;
+width: 320px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interação nos cards: elevação e sombra colorida */
+.card-informativo:hover {
+transform: translateY(-8px);
+box-shadow: 0 10px 25px rgba(250, 204, 21, 0.25);
+}
+
+.imagem-card {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 15px;
+}
+
+.card-informativo h3 {
+color: #facc15;
+margin-bottom: 10px;
+font-size: 1.25rem;
+}
+
+.card-informativo p {
+font-size: 0.95rem;
+color: #e2e8f0;
+font-size: 1.3rem;
+}
+
+/* 5. SEÇÃO DE INSCRIÇÃO (FORMULÁRIO)*/
+.formulario-inscricao {
+max-width: 600px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.grupo-campo {
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.grupo-campo label {
+color: #facc15;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.grupo-campo input {
+padding: 12px;
+border-radius: 6px;
+border: 1px solid #7c3aed;
+background-color: #0f051d;
+color: #ffffff;
+font-size: 1rem;
+accent-color: #facc15; /* Propriedade nova: cor de destaque para inputs interativos */
+}
+
+.grupo-campo input:focus {
+outline: none;
+border-color: #facc15;
+box-shadow: 0 0 8px rgba(250, 204, 21, 0.5);
+}
+
+.aviso-formulario {
+font-size: 0.85rem;
+color: #9ca3af;
+margin-top: 10px;
+text-align: center;
+}
+
+/*6. RODAPÉ*/
+footer {
+background-color: #0b0314;
+color: #9ca3af;
+text-align: center;
+padding: 30px 20px;
+border-top: 2px solid #4a154b;
+display: flex;
+flex-direction: column;
+gap: 15px;
+align-items: center;
+}
+
+footer a {
+color: #facc15;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------- /
+/ 7. RESPONSIVIDADE (MEDIA QUERY)                                            /
+/ -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+#topo {
+flex-direction: column;
+gap: 20px;
+text-align: center;
+}
+
+header nav ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.container-cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-informativo {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+}

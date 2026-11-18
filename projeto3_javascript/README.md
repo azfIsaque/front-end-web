@@ -7,7 +7,7 @@ Disciplina: Desenvolvimento Front-End para Web · Universidade Cruzeiro do Sul �
 
 | Nome | RGM | Responsabilidades |
 |------|-----|-------------------|
-| Isaque Moreira | _(preencher)_ | Estrutura HTML, identidade visual (paleta roxa), CSS, JavaScript, testes e documentação |
+| Isaque Moreira | 48034983 | Estrutura HTML, identidade visual (paleta roxa), CSS, JavaScript, testes e documentação |
 
 ## Tema
 

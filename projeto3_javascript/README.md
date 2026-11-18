@@ -68,10 +68,6 @@ Se o nome estiver vazio, a página mostra uma mensagem pedindo o preenchimento (
 - [x] O botão **Alterar tema** alterna entre claro e escuro.
 - [x] A página foi testada em tela pequena (largura de celular).
 
-## Captura de tela
-
-_(Inclua aqui a captura de tela da página funcionando, por exemplo: `![Captura de tela](captura.png)`)_
-
 ## Observação
 
 Nenhum dado pessoal (RGM, telefone, endereço) aparece na página pública; o RGM consta apenas neste README, destinado ao professor.

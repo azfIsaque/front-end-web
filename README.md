@@ -77,7 +77,16 @@ Os três pilares trabalham em camadas separadas: **HTML** (estrutura), **CSS** (
 ```text
 front-end-web/
 │
-├── Aula 02/ ... Aula 11/        # exemplos de aula, cada pasta com seu README.md
+├── Aula 02/
+├── Aula 03/
+├── Aula 04/
+├── Aula 05/
+├── Aula 06/
+├── Aula 07/
+├── Aula 08/
+├── Aula 09/
+├── Aula 10/
+├── Aula 11/      
 ├── projeto1_pagina_pessoal/
 ├── projeto2_interface_express/
 ├── projeto3_javascript/

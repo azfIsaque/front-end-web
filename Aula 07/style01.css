@@ -1,0 +1,16 @@
+.caixa{
+    text-align: center;
+    border: 2px solid purple;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: purple;
+    padding: 10px; /*espaçamento interno*/
+    box-shadow: 10px 10px; /*sombra*/
+    
+}
+
+#aviso{ 
+    width: 200px;
+    height: 100px;
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário e previsão do tempo</title>
+</head>
+<body>
+    <h1>Horário e previsão do tempo</h1>
+
+    <p>Programa mostrara uma saudação e uma recomendação do clima atual</p>
+
+    <script>
+        const dataHora = new Date();
+        const hora = dataHora.getHours();
+
+        let previsaoTempo = prompt(
+            "Como está o dia hoje? Digite chuvoso ou ensolarado: "
+        );
+
+        previsaoTempo = previsaoTempo.toLowerCase().trim();
+
+        if(hora<12){
+            alert("Bom dia :P");
+            if(previsaoTempo === "chuvoso"){
+                alert("Leva o guarda chuva pae!!!");
+            }else if(previsaoTempo === "ensolarado"){
+                alert("Passa protetor👍");
+            }else{
+                alert("Nenhuma opção selecionada...");
+            }
+        }else if(hora<18){
+            alert("Boa tarde 👍");
+            if(previsaoTempo === "chuvoso"){
+                alert("Leva o guarda chuva pae!!!");
+            }else if(previsaoTempo === "ensolarado"){
+                alert("Passa protetor👍");
+            }else{
+                alert("Nenhuma opção selecionada...");
+            }
+        }else{
+            alert("Boa noite😴");
+            if(previsaoTempo === "chuvoso"){
+                alert("Leva o guarda chuva pae!!!");
+            }else if(previsaoTempo === "ensolarado"){
+                alert("Passa protetor👍");
+            }else{
+                alert("Nenhuma opção selecionada...");
+            }
+        }
+
+    </script>
+</body>
+</html>
